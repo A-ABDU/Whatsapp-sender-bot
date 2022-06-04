@@ -1,9 +1,3 @@
-import os
-os.environ['DISPLAY'] = ':0'
-os.environ['XAUTHORITY']='/run/user/1000/gdm/Xauthority'
-import pyautogui
-print(pyautogui.position())
-
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
@@ -11,7 +5,7 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-import pywhatkit
+# import pywhatkit
 
 
 bot = Bot(token='5356920926:AAFlcyTE4Z-zZZOnHvKS815w0ENs2miG_Lc')
