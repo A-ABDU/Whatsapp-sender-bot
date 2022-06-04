@@ -5,7 +5,10 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-# import pywhatkit
+import os
+os.environ['DISPLAY'] = ':0'
+print(os.environ['DISPLAY'])
+import pywhatkit
 
 
 bot = Bot(token='5356920926:AAFlcyTE4Z-zZZOnHvKS815w0ENs2miG_Lc')
