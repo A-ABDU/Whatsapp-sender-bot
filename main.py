@@ -8,8 +8,6 @@ from aiogram.utils import executor
 # import os
 # os.environ['DISPLAY'] = ':0'
 
-import pywhatkit
-
 
 bot = Bot(token='5356920926:AAFlcyTE4Z-zZZOnHvKS815w0ENs2miG_Lc')
 dp = Dispatcher(bot, storage=MemoryStorage())
@@ -54,6 +52,7 @@ async def users_message(message: types.Message, state: FSMContext):
 
 @dp.message_handler(state=FSMWait.waiting_for_text)
 async def text_handler(message: types.Message, state: FSMContext):
+    import pywhatkit
 
     async with state.proxy() as data:
         data['waiting_for_text'] = message.text
