@@ -1,3 +1,7 @@
+import os
+
+os.environ['DISPLAY'] = ':0'
+
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
@@ -6,9 +10,7 @@ from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 import pywhatkit
-import os
 
-os.environ['DISPLAY'] = ':0'
 
 bot = Bot(token='5356920926:AAFlcyTE4Z-zZZOnHvKS815w0ENs2miG_Lc')
 dp = Dispatcher(bot, storage=MemoryStorage())
