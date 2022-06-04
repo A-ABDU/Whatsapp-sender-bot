@@ -6,8 +6,8 @@ from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 import os
-os.environ['DISPLAY'] = ':0'
-print(os.environ['DISPLAY'])
+# os.environ['DISPLAY'] = ':0'
+
 import pywhatkit
 
 
